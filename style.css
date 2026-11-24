@@ -1,0 +1,186 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e9edf2;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* MAIN CONTAINER */
+.container {
+    width: 850px;
+    max-width: 95%;
+    margin: 30px auto;
+    padding: 40px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding-bottom: 25px;
+    border-bottom: 3px solid #176b87;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #172b4d;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+header h3 {
+    color: #176b87;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.contact {
+    font-size: 13px;
+    color: #555555;
+}
+
+.contact p {
+    margin: 3px 0;
+}
+
+.contact a {
+    color: #176b87;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* SECTIONS */
+section {
+    margin-top: 25px;
+}
+
+section h2 {
+    color: #176b87;
+    font-size: 19px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 5px;
+    margin-bottom: 12px;
+}
+
+section h3 {
+    font-size: 15px;
+    color: #172b4d;
+    margin-top: 12px;
+    margin-bottom: 3px;
+}
+
+section p {
+    font-size: 13px;
+    margin: 5px 0;
+    line-height: 1.7;
+}
+
+/* LISTS */
+ul {
+    padding-left: 25px;
+    margin-top: 5px;
+}
+
+li {
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+/* BOLD TEXT */
+b {
+    color: #172b4d;
+}
+
+/* PROJECT LINKS */
+section a {
+    color: #176b87;
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #cccccc;
+    text-align: center;
+    color: #777777;
+    font-size: 12px;
+}
+
+/* MOBILE RESPONSIVE */
+@media screen and (max-width: 600px) {
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    header h3 {
+        font-size: 15px;
+    }
+
+    section h2 {
+        font-size: 17px;
+    }
+}
+
+/* PRINT / PDF */
+@page {
+    size: A4;
+    margin: 12mm;
+}
+
+@media print {
+
+    body {
+        background: white;
+        color: black;
+        font-size: 10pt;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    section,
+    section h3 {
+        break-after: avoid;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    footer {
+        margin-top: 15px;
+    }
+}
